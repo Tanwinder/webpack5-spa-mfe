@@ -1,8 +1,8 @@
 /* eslint-disable react/button-has-type */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { decrement, increment } from './counterSlice';
-import { FETCH_NUMBER_SAGA } from '../../middleware/store/sagas/sagaActions';
+import { FETCH_NUMBER_SAGA } from './counterActionTypes';
 
 const Counter = () => {
   const count = useSelector((state) => state.counter.value);

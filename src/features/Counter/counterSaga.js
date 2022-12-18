@@ -1,7 +1,7 @@
 import { call, takeEvery, put } from 'redux-saga/effects';
-import { incrementByAmount } from '../../../../features/Counter/counterSlice';
-import { FETCH_NUMBER_SAGA } from '../sagaActions';
-import { getService } from '../../../services/Api';
+import { incrementByAmount } from './counterSlice';
+import { FETCH_NUMBER_SAGA } from './counterActionTypes';
+import { getService } from '../../middleware/services/Api';
 
 export function* fetchNumberSaga() {
   try {
