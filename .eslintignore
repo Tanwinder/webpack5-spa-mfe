@@ -1,0 +1,10 @@
+.storybook
+public
+.husky
+node_modules
+specs
+mocks
+__snapshots__
+*.md
+*.html
+media
