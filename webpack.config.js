@@ -39,7 +39,7 @@ module.exports = (env, argv) => ({
   ...(argv.mode === 'development' && {
     devServer: {
       hot: true,
-      port: 3003,
+      port: 5000,
       watchContentBase: true,
       contentBase: './',
     },
